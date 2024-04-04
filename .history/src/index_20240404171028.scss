@@ -1,0 +1,18 @@
+
+body{
+    margin: 0;
+    color: #FFFFFF;
+    font-family: Arial;
+    background-color: #272727
+}
+
+img{
+    max-width: 100%
+}
+
+@import "bootstrap/scss/bootstrap-grid";
+
+
+@import "./styles/blocks/text.blocks";
+@import "./styles/blocks/discount.blocks";
+

@@ -1,0 +1,22 @@
+.b-discount {
+    border-radius: 6px;
+    font-size: 21px;
+    color: #ffffff;
+    width: auto;
+    padding: 6px;
+    position: relative;
+    background-color: #ff551e;
+
+    &::after {
+        background-color: #ff551e;
+        border-radius: 6px;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        right: -4px;
+        top: 0;
+        transform: skewX(16deg);
+        width: 100%;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,17 @@
+.c-card{
+
+    &__img{
+        border-radius: 10px;
+    }
+
+    &__frame{
+        position: relative;
+    }
+
+    &__discount{
+        bottom: 3px;
+        left: -3px;
+        z-index: 1;
+        position: absolute;
+    }
+}
