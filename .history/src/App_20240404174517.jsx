@@ -91,7 +91,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 2,
+                rating: 5,
                 title: "Assassin's Creed Odyssey Deluxe",
                 description: "Perfecto, una oferta increíble: Edición Deluxe 13,99 (con IVA). Comprado por Bizum y al instante he recibido el código de activación.",
                 date: "Ayer"
@@ -115,7 +115,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 5,
+                rating: 4,
                 title: "River city girls",
                 description: "Excelente calidad.",
                 date: "hace 3 dias"

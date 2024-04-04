@@ -1,0 +1,11 @@
+.g-primereact-rating {
+    &.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+        color: #fcb028;
+        width: 12px;
+        height: 12px;
+    }
+    &.p-rating .p-rating-item .p-rating-icon.p-icon{
+        width: 12px;
+        height: 12px;
+    }
+}

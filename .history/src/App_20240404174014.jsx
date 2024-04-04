@@ -1,3 +1,4 @@
+import { Calendar } from 'primereact/calendar'
 import './App.css'
 import Gallery from './components/Gallery/Gallery'
 import Header from './components/Header/Header'
@@ -5,6 +6,8 @@ import Heading from './components/Heading/Heading'
 import Promotion from './components/Promotion/Promotion'
 import Reviews from './components/Reviews/Reviews'
 import { PrimeReactProvider } from 'primereact/api';
+import { Button } from 'primereact/button';
+import { useState } from 'react'
 
 const ex1 = {
     header: {
@@ -91,7 +94,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 2,
+                rating: 5,
                 title: "Assassin's Creed Odyssey Deluxe",
                 description: "Perfecto, una oferta increíble: Edición Deluxe 13,99 (con IVA). Comprado por Bizum y al instante he recibido el código de activación.",
                 date: "Ayer"
@@ -99,7 +102,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 3,
+                rating: 5,
                 title: "Assassin's Creed Odyssey Deluxe",
                 description: "Maravilla de juego!.",
                 date: "Ayer"
@@ -107,7 +110,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 2,
+                rating: 5,
                 title: "Assetto Corsa Ultimate Edition",
                 description: "Como siempre!",
                 date: "Hace 2 dias"
@@ -127,11 +130,20 @@ const ex2 = {
 
 
 function App() {
+    const [date, setDate] = useState(null);
+
+    console.log(date);
     return (
         <>
             <PrimeReactProvider>
 
                 <div className='container'>
+
+
+                    <Calendar value={date} onChange={(e) => setDate(e.value)} />
+
+                    <Button label="Submit" />
+                    <Button disabled={true} label="Submit" />
                     <Header data={ex1.header} />
                 </div>
 

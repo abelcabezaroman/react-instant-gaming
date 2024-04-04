@@ -10,7 +10,7 @@ export default function Review({data}) {
         <p>{data.description}</p>
         <p>{data.date}</p>
         {/* <Rating num={data.rating}/> */}
-        <Rating className='g-primereact-rating' value={data.rating} readOnly cancel={false} />
+        <Rating value={data.rating} readOnly cancel={false} />
     </div>
   )
 }

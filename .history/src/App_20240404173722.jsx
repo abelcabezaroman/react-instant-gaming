@@ -5,6 +5,7 @@ import Heading from './components/Heading/Heading'
 import Promotion from './components/Promotion/Promotion'
 import Reviews from './components/Reviews/Reviews'
 import { PrimeReactProvider } from 'primereact/api';
+import { Button } from 'primereact/button';
 
 const ex1 = {
     header: {
@@ -91,7 +92,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 2,
+                rating: 5,
                 title: "Assassin's Creed Odyssey Deluxe",
                 description: "Perfecto, una oferta increíble: Edición Deluxe 13,99 (con IVA). Comprado por Bizum y al instante he recibido el código de activación.",
                 date: "Ayer"
@@ -99,7 +100,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 3,
+                rating: 5,
                 title: "Assassin's Creed Odyssey Deluxe",
                 description: "Maravilla de juego!.",
                 date: "Ayer"
@@ -107,7 +108,7 @@ const ex2 = {
         }, {
             review: {
                 avatar: "https://gaming-cdn.com/images/avatars/23110039-1706014521.jpg",
-                rating: 2,
+                rating: 5,
                 title: "Assetto Corsa Ultimate Edition",
                 description: "Como siempre!",
                 date: "Hace 2 dias"
@@ -127,10 +128,12 @@ const ex2 = {
 
 
 function App() {
+
     return (
         <>
             <PrimeReactProvider>
 
+            <Button label="Submit" />
                 <div className='container'>
                     <Header data={ex1.header} />
                 </div>

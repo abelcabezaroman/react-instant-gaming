@@ -1,6 +1,5 @@
 import React from 'react'
-// import Rating from '../Rating/Rating'
-import { Rating } from 'primereact/rating';
+import Rating from '../Rating/Rating'
 
 export default function Review({data}) {
   return (
@@ -10,7 +9,7 @@ export default function Review({data}) {
         <p>{data.description}</p>
         <p>{data.date}</p>
         {/* <Rating num={data.rating}/> */}
-        <Rating className='g-primereact-rating' value={data.rating} readOnly cancel={false} />
+        <Rating/>
     </div>
   )
 }
