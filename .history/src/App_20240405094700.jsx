@@ -6,7 +6,6 @@ import Heading from './components/Heading/Heading'
 import Promotion from './components/Promotion/Promotion'
 import Reviews from './components/Reviews/Reviews'
 import { PrimeReactProvider } from 'primereact/api';
-import TopGames from './components/TopGames/TopGames'
 
 const ex1 = {
     header: {
@@ -128,7 +127,7 @@ const ex2 = {
 }
 
 
-export default function App() {
+function App() {
     return (
         <>
             <PrimeReactProvider>
@@ -145,14 +144,10 @@ export default function App() {
                     <Gallery data={ex1.gallery} />
 
                     <Reviews data={ex2.reviews} />
-
-                    <Form />
-
-                    <TopGames/>
-
                 </div>
 
 
+                <Form />
             </PrimeReactProvider>
 
 
@@ -163,3 +158,5 @@ export default function App() {
 
     )
 }
+
+export default App

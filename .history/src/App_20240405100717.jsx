@@ -6,7 +6,6 @@ import Heading from './components/Heading/Heading'
 import Promotion from './components/Promotion/Promotion'
 import Reviews from './components/Reviews/Reviews'
 import { PrimeReactProvider } from 'primereact/api';
-import TopGames from './components/TopGames/TopGames'
 
 const ex1 = {
     header: {
@@ -148,7 +147,7 @@ export default function App() {
 
                     <Form />
 
-                    <TopGames/>
+
 
                 </div>
 
